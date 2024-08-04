@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Skranji:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Skranji", system-ui;
+    font-size: 700;
+}
+
+.image{
+    background-image: url(../assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.image_{
+    background-image: url(../assets/odin-lined.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 60px 70px;
+    width: 100px;
+    height: 100px;
+}
+.image_odin{
+    background-color: rgba(0, 0, 0, 0.47);
+    height: 100px;
+    width: 100%;
+}
+
+label{
+    letter-spacing: 1.5px;
+}
+input{
+    border-color: 1px solid #E5E7EB;
+    color: rgb(43, 39, 39);
+    font-weight: 700;
+}
+input:focus{
+    outline-color: rgba(37, 37, 225, 0.738);
+}
+button{
+    background-color: #596D48;
+}
+span{
+    color: #596D48;
+}
+
+.confirm_pass.invalid{
+    border: red 1px solid;
+    color: red;
+}
+#warn.invalid{
+    color: red;
+    font-weight: 500;
+    font-size: x-small;
+    font-style: italic;
+    display: block;
+    padding: 2px;
+    margin-top: 4px;
+}

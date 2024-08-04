@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../src/main.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header class="flex justify-between flex-wrap shadow-md rounded px-2 pt-3 pb-4 rounded mb-32 bg-white" style="min-height: 200px;">
+            <!-- First Section -->
+            <div class="w-48 sm:w-2/3">
+                <div class="input flex justify-center items-center gap-2">
+                    <span class="mdi mdi-magnify md:text-xl cursor-pointer"></span>
+                    <input class="md:w-11/12 bg-gray-200 appearance-none border-2 border-gray-200 rounded-full w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="text">
+                </div>
+            </div>
+            <nav class="w-1/3 flex justify-center gap-2 md:gap-5 pr-4 sm:items-center sm:-mt-4">
+                <span class="mdi mdi-bell-ring-outline text-lg sm:text-2xl cursor-pointer"></span>
+                <img class="kilo rounded-full cursor-pointer" src="../assets/ed33cc7e6fc35c71e98d1c2307d36c99.jpg" alt="kiloua" style="width: 40px; height: 40px;">
+                <p class="font-extrabold sm:text-xl text-gray mt-1.5">killua</p>
+            </nav>
+            <!-- Secound Section -->
+            <div class="w-full flex justify-between px-3 items-center mt-2 sm:-mt-10">
+                <div class="flex justify-center items-center gap-2 md:gap-3">
+                    <img class="kilo rounded-full" style="width: 40px; height: 40px;" src="../assets/dvsvs.jpeg" alt="">
+                    <div>
+                        <p style="font-size: 10px; font-weight: 500;">
+                            Hi there,
+                            <br> 
+                            <span class="font-bold text-lg sm:text-2xl">Killua <span class="text-lg hidden sm:block" >(@killua)</span></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center gap-2 p-0 sm:pr-3">
+                    <button class="bg-blue-500 hover:bg-blue-700 hover:scale-125 text-white font-bold py-1 px-2 sm:py-2 sm:px-5 rounded-full" type="button">New</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 hover:scale-125 text-white font-bold py-1 px-2 sm:py-2 sm:px-5 rounded-full" type="button">Upload</button>
+                    <button class="bg-blue-500 hover:bg-blue-700 hover:scale-125 text-white font-bold py-1 px-2 sm:py-2 sm:px-5 rounded-full" type="button">Share</button>
+                </div>
+            </div>
+        </header>
+        <aside class="flex flex-wrap sm:flex-col p-4 text-white ">
+            <h1 class="sm:flex w-full gap-2 items-center align-middle font-extrabold text-2xl sm:mb-9 -ml-2">
+                <span class="mdi mdi-view-dashboard text-3xl sm:text-4xl"></span>
+                Dashboard
+            </h1>
+            <div class="flex justify-center items-start content-start sm:block gap-24 sm:gap-0">
+                <ul class="first_list mb-12">
+                    <li class="cursor-pointer my-1.5" id="Home">
+                        <span class="mdi mdi-home-assistant mr-1"></span>
+                        Home
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="Profile">
+                        <span class="mdi mdi-card-account-details mr-1"></span>
+                        Profile
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="Messages">
+                        <span class="mdi mdi-message mr-1"></span>
+                        Messages
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="History">
+                        <span class="mdi mdi-clock-time-four mr-1"></span>
+                        History
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="Tasks">
+                        <span class="mdi mdi-file-tree mr-1"></span>
+                        Tasks
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="Communities">
+                        <span class="mdi mdi-account-group mr-1"></span>
+                        Communities
+                    </li>
+                </ul>
+
+                <ul class="secound_list mt-6">
+                    <li class="cursor-pointer my-1.5" id="Settings">
+                        <span class="mdi mdi-cog mr-1"></span>
+                        Settings
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="Support">
+                        <span class="mdi mdi-face-agent mr-1"></span>
+                        Support
+                    </li>
+                    <li class="cursor-pointer my-1.5" id="Privacy">
+                        <span class="mdi mdi-clipboard-check mr-1"></span>
+                        Privacy
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- MAIN -->
+        <main class="-mt-32 p-2 ">
+            <h1 class="font-bold text-2xl sm:px-16 sm:-px-0 mb-3 sm:m-4 sm:mb-4">Your Projects</h1>
+            <div class="flex w-full flex-wrap justify-center gap-5 mb-3">
+                <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg sm:-px-5 bg-white sm:mt-5">
+                    <p class="w-full p-1 px-5"> 
+                        <span class="font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</span>
+                            adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestiae reprehenderit corporis minima, odio dignissimos ab tenetur sapiente voluptate velit fugit aliquam illo ex beatae. Debitis praesentium dolorem quam at?
+                    </p>
+                    <div class="flex justify-end align-middle items-center p-2 gap-1.5" >
+                        <span class="mdi mdi-star-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-eye-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-share-variant mdi-rotate-90 cursor-pointer"></span>
+                    </div>
+                </article>
+                <article class="bg-white w-full sm:w-5/12 rounded overflow-hidden shadow-lg sm:-px-5 sm:mt-5">
+                    <p class="w-full p-1 px-5"> 
+                        <span class="font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</span>
+                            adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit libero amet iure tempore illum, corporis quidem dolor, magnam qui necessitatibus pariatur at modi dicta architecto alias molestiae ducimus est in.
+                    </p>
+                    <div class="flex justify-end align-middle items-center p-2 gap-1.5" >
+                        <span class="mdi mdi-star-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-eye-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-share-variant mdi-rotate-90 cursor-pointer"></span>
+                    </div>
+                </article>
+                <article class="bg-white w-full sm:w-5/12 rounded overflow-hidden shadow-lg sm:-px-5 sm:mt-5">
+                    <p class="w-full p-1 px-5"> 
+                        <span class="font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</span>
+                            adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                    <div class="flex justify-end align-middle items-center p-2 gap-1.5" >
+                        <span class="mdi mdi-star-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-eye-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-share-variant mdi-rotate-90 cursor-pointer"></span>
+                    </div>
+                </article>
+                <article class="bg-white w-full sm:w-5/12 rounded overflow-hidden shadow-lg sm:-px-5 sm:mt-5">
+                    <p class="w-full p-1 px-5"> 
+                        <span class="font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</span>
+                            adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero doloremque eligendi sint? Perferendis nulla deserunt eligendi placeat incidunt illum voluptates repellat, reprehenderit maxime amet, cupiditate illo saepe, labore cum delectus.
+                    </p>
+                    <div class="flex justify-end align-middle items-center p-2 gap-1.5" >
+                        <span class="mdi mdi-star-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-eye-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-share-variant mdi-rotate-90 cursor-pointer"></span>
+                    </div>
+                </article>
+                <article class="bg-white w-full sm:w-5/12 rounded overflow-hidden shadow-lg sm:-px-5 sm:mt-5">
+                    <p class="w-full p-1 px-5"> 
+                        <span class="font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</span>
+                            adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                    <div class="flex justify-end align-middle items-center p-2 gap-1.5" >
+                        <span class="mdi mdi-star-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-eye-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-share-variant mdi-rotate-90 cursor-pointer"></span>
+                    </div>
+                </article>
+                <article class="bg-white w-full sm:w-5/12 rounded overflow-hidden shadow-lg sm:-px-5 sm:mt-5">
+                    <p class="w-full p-1 px-5"> 
+                        <span class="font-bold text-xl">Lorem ipsum, dolor sit amet consectetur</span>
+                            adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                    <div class="flex justify-end align-middle items-center p-2 gap-1.5" >
+                        <span class="mdi mdi-star-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-eye-plus-outline cursor-pointer"></span>
+                        <span class="mdi mdi-share-variant mdi-rotate-90 cursor-pointer"></span>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <div class="flex flex-col gap-2 mt-32 sm:mt-5 sm:mr-4 ">
+            <section class="announce -mt-32 flex w-full flex-wrap justify-start p-3">
+                <h1 class="font-bold text-2xl pb-4">Announcements</h1>
+                <div class="bg-white flex rounded flex-col gap-3 shadow-lg p-6 " style="height: fit-content;">
+                    <p>
+                        <span class="font-bold text-xl">Site Maintenance</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <hr>
+                    <p>
+                        <span class="font-bold text-xl">Community Share Day</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <hr>
+                    <p>
+                        <span class="font-bold text-xl">Updated Privacy Policy</span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </section>
+            <section class="trending sm:-mt-8 flex w-full flex-wrap justify-start p-3">
+                <h1 class="font-bold text-2xl mt-6 pb-4">Trending</h1>
+                <div class="bg-white flex flex-col gap-5 rounded shadow-lg p-10 " style="height: fit-content; width: 373px;">
+                    <div class="flex gap-4 items-center">
+                        <img class="rounded-full cursor-pointer" src="../assets/dvsvs.jpeg" alt="" style="width: 50px; height: 50px;">
+                        <p class="flex flex-col gap-1">
+                            <span class="font-bold">@tegan</span>
+                            World Peace Builder
+                        </p>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <img class="rounded-full cursor-pointer" src="../assets/ed33cc7e6fc35c71e98d1c2307d36c99.jpg" alt="" style="width: 50px; height: 50px;">
+                        <p class="flex flex-col gap-1">
+                            <span class="font-bold">@morgan</span>
+                            Super Cool Project
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4 items-center">
+                        <img class="rounded-full cursor-pointer" src="../assets/wp8656140.jpg" alt="" style="width: 50px; height: 50px;">
+                        <p class="flex flex-col gap-1">
+                            <span class="font-bold">@kendall</span>
+                            Life Changing App
+                        </p>
+                    </div>
+
+                    <div class="flex gap-4 items-center">
+                        <img class="rounded-full cursor-pointer" src="../assets/R.jpeg" alt="" style="width: 50px; height: 50px;">
+                        <p class="flex flex-col gap-1">
+                            <span class="font-bold">@alex</span>
+                            No Traffic Maker
+                        </p>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg">
+                    <p class="w-full">
+                        <span></span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                </article>
+                <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg">
+                    <p class="w-full">
+                        <span></span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                </article>
+                <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg">
+                    <p class="w-full">
+                        <span></span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                </article>
+                <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg">
+                    <p class="w-full">
+                        <span></span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                </article>
+                <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg">
+                    <p class="w-full">
+                        <span></span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                </article>
+                <article class="w-full sm:w-5/12 rounded overflow-hidden shadow-lg">
+                    <p class="w-full">
+                        <span></span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eum, ut laborum, laboriosam atque quidem doloremque dignissimos fugiat nesciunt repudiandae, saepe nisi iste vitae! Ea eius eum ipsa magnam neque.
+                    </p>
+                </article> -->

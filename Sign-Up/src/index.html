@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <main class="flex overflow-hidden">
+        <!-- IMAGE -->
+        <div class="image hidden sm:flex w-1/2 sm:w-1/3 lg:w-3/12 h-lvh justify-center content-center items-center">
+            <div class="flex image_odin -mt-72 p-2 justify-center items-start content-start">
+                <div class="image_"></div>
+                <p class="odin pt-4 text-[35px] text-white">ODIN</p>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        <div class="content w-full sm:w-2/3 lg:w-9/12 h-lvh flex flex-col justify-evenly">
+            <!-- 1th SECTION -->
+            <div class="paragraph p-4 w-full sm:w-2/3">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams . Sign up now to get started.
+                <h2 class="mt-8 italic p-1">You know you want to.</h2>
+            </div>
+            <!-- 2th SECTION -->
+            <div class="w-full relative">
+                <label class="text-2xl p-4 absolute -top-10 left-3">Let's do this!</label>
+                <form class=" grid grid-cols-2 grid-row-3 gap-y-4 bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="#">
+                    <div class="first_name w-40">
+                        <label class="uppercase block text-gray-800  text-sm font-bold mb-2" for="">first name</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3  leading-tight " type="text" placeholder="Mhmd">
+                    </div>
+                    <div class="last_name w-40">
+                        <label class="uppercase block text-gray-800 text-sm font-bold mb-2" for="">last name</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3  leading-tight " type="text" placeholder="Mousa">
+                    </div>
+                    <div class="email_name w-40">
+                        <label class="uppercase block text-gray-800 text-sm font-bold mb-2" for="">email</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight " type="text" placeholder="Xmen@odin.com">
+                    </div>
+                    <div class="phone_num w-40">
+                        <label class="uppercase block text-gray-800 text-sm font-bold mb-2" for="">phone number</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3  leading-tight " type="text " placeholder="+201023456789">
+                    </div>
+                    <div class="pass w-40">
+                        <label class="uppercase block text-gray-800 text-sm font-bold mb-2" for="">password</label>
+                        <input id="pass" class="pass shadow appearance-none border rounded w-full py-2 px-3  leading-tight" type="text">
+                    </div>
+                    <div class="confirm_pass w-40">
+                        <label class=" uppercase block text-gray-800 text-sm font-bold mb-2 w-48" for="">confirm password</label>
+                        <input id="confirm" class="confirm_pass shadow appearance-none border rounded w-full py-2 px-3 leading-tight " type="text">
+                        <p id="warn" class="hidden">Password don't match</p>
+                    </div>
+                </form>
+                <div class="button_ p-4">
+                    <button id="btn" class=" hover:bg-green-500 text-white font-bold py-3 px-5 mb-3 rounded focus:outline-none focus:shadow-outline" type="submit">Create Account</button>
+                    <p>Already have an account? <span class="cursor-pointer">Log in</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let confirm_pass = document.getElementById('confirm');
+        let pass = document.getElementById('pass');
+        let btn = document.getElementById('btn');
+        let p = document.getElementById('warn')
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (pass.value !== confirm_pass.value){
+                confirm_pass.className += 'invalid';
+                p.className = 'invalid';
+            }
+        })
+        
+    </script>
+</body>
+</html>
