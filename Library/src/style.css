@@ -23,8 +23,8 @@ li {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
   background-color: white;
   border-radius: 6px;
-  width: 224px;
-  height: 224px;
+  width: 270px;
+  height: 250px;
   padding: 16px 12px;
   display: flex;
   flex-direction: column;
@@ -32,9 +32,11 @@ li {
   align-items: center;
 }
 li p {
+  width: 100%;
+  text-align: center;
   color: rgb(30, 41, 59);
   line-height: 32px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -68,7 +70,11 @@ li p {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216/var(--tw-bg-opacity));
 }
-.div_btns .delete_btn:focus {
+.div_btns .delete_btn:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28/var(--tw-bg-opacity));
+}
+
+li {
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */
