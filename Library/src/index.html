@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class=" p-0 m-0 flex justify-center items-start pb-12" style="height: 100vh;">
+    <main class="container flex flex-col justify-start items-center pt-10 m-1 gap-3 w-full h-fit pb-10">
+        <header>
+            <button type="button" class="add_button text-sm text-white py-3 px-4 rounded">Add New Book</button>
+        </header>
+        <div class="info z-40 hidden rounded shadow-md p-20 py-10 mt-36 absolute">
+            <form class="rounded px-8 pt-6 pb-8">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                        Title
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" placeholder="Sleeping">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Author
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="author" type="text" placeholder="Mhmd Mousa">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                        Pages
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="pages" type="text" placeholder="ex. 2">
+                </div>
+                <div class="flex items-center justify-around">
+                    <button class="addd bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Add
+                    </button>
+                    <button class="cancel bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+        </div>
+        <section class="Books mt-10 z-0 " >
+            <ul class="list_of_book flex flex-wrap gap-6 justify-center sm:justify-start items-center">
+                
+            </ul>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
